@@ -4,7 +4,7 @@ shrewdeye seamlessly integrates with the Shrewdeye API to uncover subdomains for
 ## Installation
 shrewdeye requires Golang to install successfully. Run the following command to install:
 ```sh
-go install github.com/omkar7505/shrewdeye
+go install github.com/omkar7505/shrewdeye@latest
 ```
 ## Usage:
 ```sh
