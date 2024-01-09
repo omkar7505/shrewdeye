@@ -25,7 +25,7 @@ func makeRequest(domain string, outputFileName string, delay time.Duration, vali
 		defer response.Body.Close()
 	
 		if response.StatusCode != http.StatusOK {
-			return fmt.Errorf("HTTP request failed with status code %d", response.StatusCode)
+			return nil
 		}
 	
 		body, err := ioutil.ReadAll(response.Body)
@@ -57,7 +57,7 @@ func makeRequest(domain string, outputFileName string, delay time.Duration, vali
 		defer response.Body.Close()
 	
 		if response.StatusCode != http.StatusOK {
-			return fmt.Errorf("HTTP request failed with status code %d", response.StatusCode)
+			return nil
 		}
 	
 		body, err := ioutil.ReadAll(response.Body)
