@@ -33,7 +33,7 @@ func makeRequest(domain string, outputFileName string, delay time.Duration, vali
 			return err
 		}
 	
-		fmt.Printf("%s\n", string(body))
+		fmt.Printf("%s", string(body))
 	
 		// Save the result if -o flag is supplied
 		if outputFileName != "" {
@@ -65,7 +65,7 @@ func makeRequest(domain string, outputFileName string, delay time.Duration, vali
 			return err
 		}
 	
-		fmt.Printf("%s\n", string(body))
+		fmt.Printf("%s", string(body))
 	
 		// Save the result if -o flag is supplied
 		if outputFileName != "" {
